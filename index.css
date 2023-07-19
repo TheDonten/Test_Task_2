@@ -1,0 +1,476 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/inter-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/inter-v12-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/inter-v12-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.backgrounds {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    background-color: #0E1014;
+}
+
+.purple_ball{
+    top: -2px;
+    left: 868px;
+    position: fixed;
+
+
+}
+.purple_ball_logo{
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25));
+    backdrop-filter: blur(2px);
+}
+.red_ball_big{
+    top: 83px;
+    left: 519px;
+    position: fixed;
+}
+.red_ball_big_logo{
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+}
+.red_ball_small{
+    top: 547px;
+    left: 851px;
+    position: fixed;
+}
+.red_ball_small_logo{
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+}
+.purple_eclipse{
+    top: -154px;
+    left: 602px;
+    position: fixed;
+
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833AB4;
+    filter: blur(196px);
+}
+.red_eclipse{
+    top: 251px;
+    left: -102px;
+    position: fixed;
+
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961A1A;
+    filter: blur(196px);
+}
+
+.desktop {
+    height: 980px;
+    max-width: 1440px;
+    margin-left: 150px;
+    margin-right: 150px;
+    /*//margin: 0 auto;*/
+}
+
+.desktop_main {
+    display: grid;
+    margin-top: 61px;
+    grid-template-rows: 73px 1fr 315px;
+}
+
+.header {
+    width: 1140px;
+}
+
+.header_wrapper {
+
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content min-content auto;
+
+}
+
+.main {
+    /*margin-top: 178px;*/
+    width: 1141px;
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-columns: min-content auto;
+
+    grid-template-areas:
+    "main_left_side" "main_right_side"
+    "main_bottom_side" "main_bottom_side";
+}
+
+.main_bottom_side {
+    grid-column: 1 / 3;
+    margin-top: 61px;
+    display: grid;
+    justify-content: end;
+}
+
+.main_bottom_side_button {
+    background: #4077F3;
+    width: 262px;
+    height: 61px;
+
+}
+
+
+.main_bottom_side_button > p {
+    color: #E4E5EA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_right_side {
+
+    margin-top: 105px;
+    display: grid;
+    justify-content: end;
+    grid-template-rows: min-content auto;
+    row-gap: 40px;
+}
+
+.main_right_side_block_one {
+
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.main_right_side_block_two {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 164px 135px;
+    row-gap: 30px;
+    column-gap: 30px
+}
+
+.main_right_side_block_two_item_list {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    row-gap: 6px;
+}
+
+.main_right_side_block_two_item_list_item_one {
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.main_right_side_block_two_item_list_item_two {
+    color: #E4E5EA;
+    height: 40px;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_right_side_block_one_gradient {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    background-color: #E4E5EA;
+    background-image: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_right_side_block_two {
+
+}
+
+.main_left_side {
+    margin-top: 90px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    /*grid-template-columns: min-content;*/
+    /*grid-template-rows: 116px 58px 44px;*/
+}
+
+.main_left_side_block_one {
+    display: grid;
+    grid-template-rows: min-content min-content;
+}
+
+.main_left_side_block_one_item_one {
+    width: 362px;
+    color: #E4E5EA;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_left_side_block_one_item_two {
+    width: 247px;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background-color: #E4E5EA;
+    background-image: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_left_side_block_two {
+    width: 275px;
+    color: #E4E5EA;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_left_side_item_one {
+    width: 362px;
+}
+
+.main_left_side_item_two {
+    width: 247px;
+}
+
+.main_left_side_item_three {
+}
+
+.footer {
+    width: 1141px;
+    margin-top: 124px;
+    display: grid;
+    grid-template-columns: minmax(min-content, 293px) minmax(min-content, 571px) auto;
+    grid-template-rows: auto auto;
+}
+
+.footer_about_company_list {
+    display: grid;
+    grid-template-rows:min-content min-content;
+    margin-right: 98px;
+    grid-template-columns: minmax(min-content, 195px);
+    row-gap: 20px;
+}
+
+.footer_item_blockOne {
+    color: #656566;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.footer_item_BlockTwo {
+    display: grid;
+    grid-template-rows:min-content min-content;
+    grid-template-columns: minmax(min-content, 277px);
+    row-gap: 10px;
+}
+
+.footer_item_BlockTwo_item {
+    color: #E4E5EA;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_menu {
+    display: grid;
+    margin-right: 163px;
+    grid-template-rows:min-content min-content;
+    grid-template-columns: minmax(min-content, 144px) minmax(min-content, 212px);
+    row-gap: 20px;
+    column-gap: 52px;
+}
+
+.footer_menu_header {
+    grid-column: 1 / 3;
+    color: #656566;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.footer_contacts_list {
+    display: grid;
+    grid-template-rows:min-content min-content;
+    grid-template-columns: minmax(min-content, 277px);
+    row-gap: 20px;
+    justify-content: end;
+}
+
+.footer_list_log {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 20px 20px 20px;
+    column-gap: 10px;
+}
+
+.footer_contacts_list > * {
+    text-align: right;
+}
+
+.footer_address_and_law_list {
+    grid-column: 1 / 4;
+    display: grid;
+    justify-content: end;
+    grid-template-rows:min-content min-content;
+    grid-template-columns: minmax(min-content, 239px);
+}
+
+.footer_address_and_law_item {
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_address_and_law_item > p {
+    text-decoration-line: underline;
+}
+
+.header_display_name_company {
+
+    margin-right: 52px;
+    display: grid;
+    grid-template-columns: 140px;
+    grid-template-rows: min-content min-content;;
+    row-gap: 10px;
+}
+
+.header_display_name_company_logo {
+
+}
+
+.header_display_name_company_full {
+    color: #E4E5EA;
+
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.header_display_select_button_list {
+
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    column-gap: 30px;
+    margin-right: 137px;
+}
+
+.header_display_select_button_item {
+    color: #E4E5EA;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header_display_info_company {
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 47px;
+
+}
+
+.header_display_info_company_item_number {
+
+    color: #E4E5EA;
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header_display_info_company_item_logo_list {
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 30px;
+
+}
+
+.header_display_info_company_item_logo_item {}
