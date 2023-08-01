@@ -40,49 +40,60 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+
 }
 
 .backgrounds {
     height: 100vh;
     width: 100vw;
-
     position: fixed;
+
+    overflow: auto;
+
+    display: grid;
+    justify-content: center;
+
+
     background-color: #0E1014;
 }
 
 .purple_ball{
-    top: -2px;
-    left: 868px;
-    position: fixed;
+    margin-top: 2px;
+    margin-left: 713px;
 
-
+    position: absolute;
 }
 .purple_ball_logo{
     filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25));
     backdrop-filter: blur(2px);
 }
 .red_ball_big{
-    top: 83px;
-    left: 519px;
-    position: fixed;
+
+    margin-left: 355px;
+    margin-top: 83px;
+
+
+    position: absolute;
 }
 .red_ball_big_logo{
-    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
-    backdrop-filter: blur(2px);
+    filter: drop-shadow(3px 3px 17px rgba(223, 125, 125, 0.25));
+
 }
 .red_ball_small{
-    top: 547px;
-    left: 851px;
-    position: fixed;
+    margin-left: 701px;
+    margin-top: 547px;
+
+    position: absolute;
 }
 .red_ball_small_logo{
     filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
     backdrop-filter: blur(2px);
 }
 .purple_eclipse{
-    top: -154px;
-    left: 602px;
-    position: fixed;
+
+    margin-left: 452px;
+    margin-top: -246px;
+    position: absolute;
 
     width: 259px;
     height: 259px;
@@ -92,8 +103,8 @@ html {
     filter: blur(196px);
 }
 .red_eclipse{
-    top: 251px;
-    left: -102px;
+    margin-left: -351px;
+    margin-top: 251px;
     position: fixed;
 
     width: 311px;
@@ -105,16 +116,24 @@ html {
 }
 
 .desktop {
+    /*margin: auto;*/
+    display: grid;
+    justify-content: center;
+        /*position: absolute;*/
+    /*margin: 150px auto;*/
     height: 980px;
     max-width: 1440px;
-    margin-left: 150px;
-    margin-right: 150px;
+
+    /*margin-left: 150px;*/
+    /*margin-right: 150px;*/
     /*//margin: 0 auto;*/
 }
 
 .desktop_main {
+
     display: grid;
     margin-top: 61px;
+    align-items: center;
     grid-template-rows: 73px 1fr 315px;
 }
 
